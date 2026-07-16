@@ -1,0 +1,282 @@
+{% extends "base.html" %}
+
+{% block title %}Programs{% endblock %}
+{% block main_class %}pb-20{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-6 mb-20 lg:mb-32">
+  <div class="grid lg:grid-cols-12 gap-12 items-end">
+    <div class="lg:col-span-8">
+      <span class="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-4 block">Our
+        Initiatives</span>
+      <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9]">
+        Empowering Change. <br /><span class="text-secondary">Defeating Laxity.</span>
+      </h1>
+      <p class="dark:text-outline font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+        We deploy structured interventions designed to bridge the gap
+        between systemic neglect and sustainable community excellence
+        through high-impact programming.
+      </p>
+    </div>
+    <div class="lg:col-span-4 hidden lg:block">
+      <div class="p-8 border-l border-outline-variant/20">
+        <p class="dark:text-outline font-serif italic text-lg text-on-surface-variant">
+          "Action is the antidote to apathy. Our programs are the vessels
+          through which we channel collective resolve."
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Programs Section -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12">
+    <h2 class="text-4xl font-bold tracking-tight">Active Programs</h2>
+
+    <!-- Dynamically Generated Category Filters -->
+    <div class="flex flex-wrap gap-2" id="filter-buttons-container">
+      <button data-category="All"
+        class="filter-btn px-6 py-2 rounded-full bg-secondary text-white font-label text-sm transition-all duration-300">
+        All
+      </button>
+      {% if programs %}
+      {% set processed_categories = [] %}
+      {% for program in programs %}
+      {% if program.category and program.category not in processed_categories %}
+      <button data-category="{{ program.category }}"
+        class="filter-btn px-6 py-2 rounded-full bg-slate-100 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-white/10 font-label text-sm transition-all duration-300">
+        {{ program.category }}
+      </button>
+      {% set _ = processed_categories.append(program.category) %}
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Render Programs with Jinja -->
+  <div id="program-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% if programs %}
+    {% for program in programs %}
+    <!-- Included data-category attribute here for JS filtering targeting -->
+    <div data-program-category="{{ program.category }}"
+      class="program-card group bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+      <!-- Image -->
+      <div class="w-full h-52 overflow-hidden bg-slate-100 dark:bg-white/5">
+        <img src="{{ program.image or 'https://placehold.co/600x400?text=KALF' }}" alt="{{ program.title }}"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </div>
+
+      <!-- Content -->
+      <div class="p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400 border border-green-100 dark:border-green-900/40">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>
+            Active
+          </span>
+          {% if program.badge %}
+          <span
+            class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-secondary/10 text-secondary border border-secondary/20">
+            {{ program.badge }}
+          </span>
+          {% endif %}
+        </div>
+
+        <h3 class="font-headline text-xl font-bold text-primary dark:text-white leading-tight">
+          {{ program.title }}
+        </h3>
+
+        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-3">
+          {{ program.description or "No description available." }}
+        </p>
+
+        <div class="pt-2 mt-auto">
+          <a href="{{ program.link or '#' }}"
+            class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:gap-3 transition-all duration-200">
+            Learn More
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center justify-center py-24 gap-4">
+      <span class="material-symbols-outlined text-[48px] text-outline-variant">folder_open</span>
+      <p class="text-on-surface-variant dark:text-white/50 text-sm">No active programs at the moment. Check back soon!
+      </p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="eventSection" class="dark:bg-white/5 bg-surface-container py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16">
+      <h2 class="text-4xl font-bold tracking-tight mb-4">Convenings &amp; Events</h2>
+
+      <!-- Tabs -->
+      <div class="flex gap-8 border-b border-outline-variant/30">
+        <button id="btn-upcoming" class="tab-btn pb-4 transition-all">
+          Upcoming Events
+        </button>
+
+        <button id="btn-past" class="tab-btn pb-4 transition-all">
+          Past Events
+        </button>
+      </div>
+
+      <!-- Upcoming Events Sub-grid -->
+      <div id="upcoming-events-list" class="event-tab-content grid grid-cols-1 gap-4">
+        {% if upcoming_events %}
+        {% for event in upcoming_events %}
+        <div
+          class="group bg-surface-container-lowest dark:bg-white/5 p-6 rounded-xl border border-transparent dark:border-white/5 flex flex-col md:flex-row md:items-center gap-8 hover:bg-secondary dark:hover:bg-secondary hover:text-white transition-all duration-300">
+          <div class="md:w-32 flex-shrink-0">
+            <span class="block text-3xl font-black dark:text-white group-hover:text-white">{{ event.day }}</span>
+            <span class="font-label uppercase tracking-widest text-xs text-secondary group-hover:text-white/90">{{
+              event.month_year }}</span>
+          </div>
+          <div class="flex-grow">
+            <span
+              class="text-[10px] font-bold uppercase tracking-widest text-secondary group-hover:text-white/80 mb-1 block">Event</span>
+            <h4 class="text-xl font-bold mb-1 dark:text-white group-hover:text-white">{{ event.title }}</h4>
+            <div
+              class="flex items-center gap-4 text-sm text-on-surface-variant dark:text-white/60 group-hover:text-white/80">
+              <span>📍 {{ event.location or 'TBD' }}</span>
+              {% if event.time %}<span>⏰ {{ event.time }}</span>{% endif %}
+            </div>
+          </div>
+          <div class="md:w-48 flex flex-col md:items-end">
+            {% if event.fullyBooked %}
+            <span class="px-8 py-3 bg-neutral-500 text-white rounded-full font-bold text-sm uppercase">Fully
+              Booked</span>
+            {% else %}
+            <button
+              class="cursor-pointer w-full md:w-auto px-8 py-3 bg-secondary dark:bg-secondary/20 text-white border border-transparent dark:border-secondary/50 rounded-full font-bold group-hover:bg-white group-hover:text-secondary transition-all">RSVP</button>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="flex flex-col items-center justify-center py-16 text-on-surface-variant dark:text-white/40">
+          <span class="material-symbols-outlined text-[48px] mb-4">event_busy</span>
+          <p class="text-sm">No upcoming events at the moment.</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Past Events Sub-grid (Hidden by default) -->
+      <div id="past-events-list" class="event-tab-content hidden grid grid-cols-1 gap-4">
+        {% if past_events %}
+        {% for event in past_events %}
+        <div
+          class="bg-surface-container-lowest dark:bg-white/5 p-6 rounded-xl border border-black/5 dark:border-white/10 flex flex-col md:flex-row md:items-center gap-8 opacity-60">
+          <div class="md:w-32 flex-shrink-0">
+            <span class="block text-3xl font-black dark:text-white">{{ event.day }}</span>
+            <span class="font-label uppercase tracking-widest text-xs text-secondary/70">{{ event.month_year }}</span>
+          </div>
+          <div class="flex-grow">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1 block">Past Event</span>
+            <h4 class="text-xl font-bold mb-1 dark:text-white">{{ event.title }}</h4>
+            <div class="flex items-center gap-4 text-sm dark:text-white/40">
+              <span>📍 {{ event.location or 'TBD' }}</span>
+            </div>
+          </div>
+          <div class="md:w-48 flex flex-col md:items-end">
+            <span
+              class="px-8 py-3 border border-outline/30 dark:border-white/10 text-outline dark:text-white/30 rounded-full font-bold text-sm uppercase">Past
+              Event</span>
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="flex flex-col items-center justify-center py-16 text-on-surface-variant dark:text-white/40">
+          <span class="material-symbols-outlined text-[48px] mb-4">event_busy</span>
+          <p class="text-sm">No past events found.</p>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Clean, Lightweight Client Switcher for Tab UI and Program Filtering -->
+<script>
+  // Tab Switching Logic for Convenings/Events
+  // Tab Switching Logic for Convenings/Events
+const btnUpcoming = document.getElementById('btn-upcoming');
+const btnPast = document.getElementById('btn-past');
+const upcomingList = document.getElementById('upcoming-events-list');
+const pastList = document.getElementById('past-events-list');
+
+function switchTab(showUpcoming) {
+  if (showUpcoming) {
+    upcomingList.classList.remove("hidden");
+    pastList.classList.add("hidden");
+
+    // Active
+    btnUpcoming.className =
+      "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
+
+    // Inactive
+    btnPast.className =
+      "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
+  } else {
+    upcomingList.classList.add("hidden");
+    pastList.classList.remove("hidden");
+
+    // Active
+    btnPast.className =
+      "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
+
+    // Inactive
+    btnUpcoming.className =
+      "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
+  }
+}
+
+btnUpcoming.addEventListener('click', () => switchTab(true));
+btnPast.addEventListener('click', () => switchTab(false));
+
+  // Client-Side Dynamic Category Filtering for Active Programs
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const programCards = document.querySelectorAll('.program-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetCategory = button.getAttribute('data-category');
+
+      // Style Update: Highlight the active button, restore others
+      filterButtons.forEach(btn => {
+        btn.className = "filter-btn px-6 py-2 rounded-full bg-slate-100 dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-white/10 font-label text-sm transition-all duration-300";
+      });
+      button.className = "filter-btn px-6 py-2 rounded-full bg-secondary text-white font-label text-sm transition-all duration-300";
+
+      // Filtering logic: show/hide targeted program cards
+      programCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-program-category');
+        if (targetCategory === 'All' || cardCategory === targetCategory) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+{% endblock %}

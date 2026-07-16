@@ -1,0 +1,55 @@
+{
+  "upcoming": [
+    {
+      "title": "Impact Summit: Urban Resilience Forum",
+      "date": "2026-10-24",
+      "time": "09:00 AM",
+      "location": "Lagos, NG",
+      "fullyBooked": false
+    },
+    {
+      "title": "Leadership Bootcamp",
+      "date": "2026-11-12",
+      "time": "10:00 AM",
+      "location": "Abuja, NG",
+      "fullyBooked": true
+    }
+  ],
+  "past": [
+    {
+      "title": "Youth Civic Training",
+      "date": "2025-03-10",
+      "time": "10:00 AM",
+      "location": "Benin, NG",
+      "fullyBooked": true
+    },
+    {
+      "title": "Community Health Outreach",
+      "date": "2025-05-22",
+      "time": "09:00 AM",
+      "location": "Ibadan, NG",
+      "fullyBooked": true
+    },
+    {
+      "title": "Entrepreneurship Workshop",
+      "date": "2025-07-15",
+      "time": "11:00 AM",
+      "location": "Port Harcourt, NG",
+      "fullyBooked": true
+    },
+    {
+      "title": "Education Reform Forum",
+      "date": "2025-09-05",
+      "time": "02:00 PM",
+      "location": "Lagos, NG",
+      "fullyBooked": true
+    },
+    {
+      "title": "Agriculture Innovation Meetup",
+      "date": "2025-12-01",
+      "time": "08:00 AM",
+      "location": "Kano, NG",
+      "fullyBooked": true
+    }
+  ]
+}

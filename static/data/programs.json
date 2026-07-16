@@ -1,0 +1,913 @@
+{
+  "Education": [
+    {
+      "id": "kalf-symposium",
+      "title": "KALF Symposium",
+      "description": "A high-level forum where youths, professionals, and thought leaders engage in structured conversations around pressing societal issues — featuring panels, youth-led pitches, and interactive Q&A.",
+      "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/kalf-symposium",
+      "details": {
+        "badge": "FORUM & DIALOGUE",
+        "titleItalic": "Youths & Leaders Dialogue",
+        "titleMain": "KALF Symposium",
+        "heroImage": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80",
+        "overview": [
+          "The KALF Symposium serves as an intellectual epicenter bringing together visionary youths and seasoned industry giants to address pressing socioeconomic landscapes. Participants engage in intense, curated dialogues designed to turn progressive ideas into actionable community policy.",
+          "Over a high-impact, single-day forum, attendees collaborate through interactive pitches and panels to build strategic networks that drive systemic change."
+        ],
+        "audience": "Designed for young leaders, policy enthusiasts, grassroots activists, and professionals aged 18–35 eager to shape societal dialogue.",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "1 Day Event"
+          },
+          {
+            "label": "Access",
+            "value": "Open Registration"
+          },
+          {
+            "label": "Investment",
+            "value": "Free"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Panel Sessions",
+            "desc": "Structured conversations featuring industry captains and youth leaders."
+          },
+          {
+            "id": "02",
+            "name": "Interactive Q&A",
+            "desc": "Audience dialogue directly confronting pressing socio-economic themes."
+          },
+          {
+            "id": "03",
+            "name": "Youth-Led Pitches",
+            "desc": "Innovative idea demonstrations presenting grassroots solutions."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "kalf-debate",
+      "title": "KALF Debate",
+      "description": "A structured platform for competitive debate and continuous intellectual expression — with official annual events and an open year-round application platform for young thinkers.",
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/kalf-debate",
+      "details": {
+        "badge": "COMPETITIVE INTELLECTUALISM",
+        "titleItalic": "Challenging Perspective",
+        "titleMain": "KALF Debate",
+        "heroImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+        "overview": [
+          "The KALF Debate program is a premier arena for rigorous rhetoric, challenging participants to analyze global policy, philosophy, and socio-economic affairs under competitive conditions. Debaters learn to craft ironclad arguments, dismantle logical fallacies, and speak with absolute authority.",
+          "This year-round incubator sharpens critical thinking skills through championship tournaments, intensive masterclasses, and ongoing sparring sessions."
+        ],
+        "audience": "Open to student debaters, aspiring advocates, and analytical thinkers aged 16–28 looking to master the art of persuasion.",
+        "stats": [
+          {
+            "label": "Frequency",
+            "value": "Annual Championship"
+          },
+          {
+            "label": "Eligibility",
+            "value": "Young Thinkers"
+          },
+          {
+            "label": "Investment",
+            "value": "Free"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Public Speaking",
+            "desc": "Developing robust argumentative structure and rhetorical competence."
+          },
+          {
+            "id": "02",
+            "name": "Critical Analysis",
+            "desc": "Deconstructing systemic policy items with academic precision."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    }
+  ],
+  "Mentorship": [
+    {
+      "id": "vanguard",
+      "title": "Vanguard Pathways",
+      "description": "Pairing emerging leaders with established industry titans for a year-long strategic journey.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/vanguard",
+      "details": {
+        "badge": "STRATEGIC MENTORSHIP",
+        "titleItalic": "Strategic Pathways",
+        "titleMain": "Vanguard Pathways",
+        "heroImage": "https://images.unsplash.com/photo-152202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+        "overview": [
+          "Vanguard Pathways is an elite, structured mentorship initiative that pairs high-potential professionals with world-class industry executives. Over a 12-month timeline, pairs work through a custom development plan targeting systemic leadership, executive presence, and business scaling.",
+          "Mentees gain unprecedented backroom access to corporate strategy sessions, high-stakes negotiations, and exclusive professional networks."
+        ],
+        "audience": "Designed for mid-level professionals, early-stage founders, and social entrepreneurs aged 22–32 with a proven track record of execution.",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "1 Year Cohort"
+          },
+          {
+            "label": "Structure",
+            "value": "1-on-1 Matching"
+          },
+          {
+            "label": "Investment",
+            "value": "Free"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Leadership Alignment",
+            "desc": "Mapping vision directly to systemic implementation pipelines."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1531535934027-687fde999828?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "the-cultivator",
+      "title": "The Cultivator",
+      "description": "A year-long journey of transformation, mentorship, and skill mastery. KALF's flagship program bridging the gap between potential and productivity in young Nigerians.",
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/the-cultivator",
+      "badge": "Flagship",
+      "details": {
+        "badge": "FLAGSHIP MENTORSHIP",
+        "titleItalic": "Transformation & Skill Mastery",
+        "titleMain": "The Cultivator",
+        "heroImage": "https://images.unsplash.com/photo-1531535934027-687fde999828?auto=format&fit=crop&w=1200&q=80",
+        "overview": [
+          "The Cultivator is KALF's comprehensive flagship framework, meticulously engineered to turn raw ambition into market-ready capacity. Fellows go through a transformation journey blending hard skill development with intensive emotional intelligence, financial literacy, and community building.",
+          "Our immersive ecosystem supports each candidate with a customized support network, dedicated masterclasses, and project seed funding."
+        ],
+        "audience": "Highly motivated, young Nigerian undergraduates, fresh graduates, and grassroots builders aged 18–28 looking to fast-track their development.",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "1 Year"
+          },
+          {
+            "label": "Cohorts",
+            "value": "Interactive"
+          },
+          {
+            "label": "Investment",
+            "value": "Free"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Skill Transformation",
+            "desc": "Transitioning potential into marketplace and community productivity."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1521791136368-1a46827d0515?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    }
+  ],
+  "Events": [
+    {
+      "id": "kalf-week",
+      "title": "KALF Week",
+      "description": "A three-day annual convergence of youth, ideas, and impact — featuring workshops, talk shows, debates, award ceremonies, and dialogue between youth and societal leaders.",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/kalf-week",
+      "badge": "Annual",
+      "details": {
+        "badge": "ANNUAL CONVERGENCE",
+        "titleItalic": "Youth, Ideas, & Impact",
+        "titleMain": "KALF Week",
+        "heroImage": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80",
+        "overview": [
+          "KALF Week stands as our ultimate annual celebration of youth culture, community-led innovation, and socioeconomic change. Over three dynamic days, our community hosts masterclasses, social pitches, panel discussions, and creative showcases that spotlight promising regional talents.",
+          "It is an immersive, high-energy environment built to spark unexpected collaborations and celebrate the collective progress of our youth cohorts."
+        ],
+        "audience": "Open to all creatives, tech enthusiasts, policy advocates, students, and community builders seeking networking and inspiration.",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "3 Days"
+          },
+          {
+            "label": "Investment",
+            "value": "Free"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Workshops",
+            "desc": "Practical masterclasses tackling real-world execution issues."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    }
+  ],
+  "Skills": [
+    {
+      "id": "shoe-making",
+      "title": "The Scholars Guild: Shoe Making",
+      "description": "Bridging the digital divide and artisanal heritage through rigorous technical footwear design.",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/shoe-making",
+      "details": {
+        "badge": "Professional Skill Acquisition",
+        "titleItalic": "Shoe Making & Design",
+        "titleMain": "Mastering the craft:",
+        "overview": [
+          "The Scholars Guild: Shoe Making is a rigorous, hands-on apprenticeship bridging artisanal heritage with modern technical design. Fellows move from raw pattern drafting through to a finished, market-ready product.",
+          "Across 12 weeks, small cohorts work directly with master craftsmen, covering everything from material sourcing to the business fundamentals needed to launch an independent practice."
+        ],
+        "audience": "Ideal for creatives, aspiring designers, and artisans aged 18–30 with no prior footwear experience required.",
+        "heroImage": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "3 Months Full-Time"
+          },
+          {
+            "label": "Cohorts",
+            "value": "12 Fellows Max"
+          },
+          {
+            "label": "Investment",
+            "value": "₦500"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Pattern Drafting",
+            "desc": "Mastering the geometry of the foot. Understanding 2D translations to 3D forms."
+          },
+          {
+            "id": "02",
+            "name": "Material Selection",
+            "desc": "Sourcing exotic leathers and sustainable textiles."
+          },
+          {
+            "id": "03",
+            "name": "Lasting & Soling",
+            "desc": "Structural integrity. Learning hand-lasting and Goodyear welting."
+          },
+          {
+            "id": "04",
+            "name": "Business of Footwear",
+            "desc": "Pricing strategies, supply chain ethics, and brand storytelling."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "web-design-development",
+      "title": "The Foundation: Web Design & Development",
+      "description": "Learn modern web design and development through hands-on practical training that prepares participants for employment, entrepreneurship, and higher education.",
+      "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/web-design-development",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "Web Design & Development",
+        "titleMain": "Build modern websites:",
+        "overview": [
+          "The Foundation: Web Design & Development provides an immersive deep dive into contemporary front-end tools, UI layouts, and structural coding practices. Students go from absolute beginners to building interactive, highly responsive websites using modern standards.",
+          "Over 4 months of intensive learning, participants cover everything from basic HTML structure and styling concepts to modern deployment workflows and client management."
+        ],
+        "audience": "Designed for tech-curious youth, aspiring web developers, and career switchers aged 18–35 looking to build clean digital projects.",
+        "heroImage": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Semantic Markup & CSS",
+            "desc": "Structuring accessible layouts with modern responsive design standards."
+          },
+          {
+            "id": "02",
+            "name": "Interactive Scripting",
+            "desc": "Adding functional dynamic components and state changes using JavaScript."
+          },
+          {
+            "id": "03",
+            "name": "Hosting & Deployment",
+            "desc": "Configuring custom domains, utilizing GitHub, and managing live environments."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "graphics-design",
+      "title": "The Foundation: Graphics Design",
+      "description": "Develop practical graphic design skills through hands-on training for creative and professional opportunities.",
+      "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/graphics-design",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "Graphics Design",
+        "titleMain": "Design with creativity:",
+        "overview": [
+          "The Foundation: Graphics Design introduces students to the visual principles of layout, visual hierarchies, and modern branding psychology. Participants learn to leverage powerful industry software to express design theories through polished corporate identity work.",
+          "Through continuous, hands-on production blocks, you will master layout design, color balancing, typography rules, and professional prepress setups."
+        ],
+        "audience": "Aimed at aspiring brand designers, marketing professionals, and visual artists aged 18–35 looking to build a high-caliber portfolio.",
+        "heroImage": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Design Theory",
+            "desc": "Grasping color psychology, negative space, and typographic hierarchies."
+          },
+          {
+            "id": "02",
+            "name": "Vector Illustration",
+            "desc": "Drafting logos and commercial artwork using vector-based creation platforms."
+          },
+          {
+            "id": "03",
+            "name": "Layout Mastery",
+            "desc": "Structuring print-ready catalogs, banners, and digital marketing materials."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1561070791-26c113006238?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "data-analysis",
+      "title": "The Foundation: Data Analysis",
+      "description": "Gain practical data analysis skills to solve real-world problems using modern analytical tools.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/data-analysis",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "Data Analysis",
+        "titleMain": "Turn data into insights:",
+        "overview": [
+          "The Foundation: Data Analysis transforms students into data-literate analytical professionals who extract clear intelligence from complex information sets. You will learn to scrub raw databases, establish logical structures, and generate business-critical metric dashboards.",
+          "Over 4 months, students work through real statistical tasks, learning directly how clean reports enable smarter executive choices."
+        ],
+        "audience": "Perfect for business professionals, graduates, and data enthusiasts aged 18–35 looking to thrive in data-driven operations.",
+        "heroImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Database Cleaning",
+            "desc": "Resolving incomplete entries, merging disparate datasets, and validating queries."
+          },
+          {
+            "id": "02",
+            "name": "Statistical Intelligence",
+            "desc": "Applying mathematical formulas, key trends, and distribution models."
+          },
+          {
+            "id": "03",
+            "name": "Interactive Dashboards",
+            "desc": "Designing high-clarity data sheets and visual charts for stakeholders."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "ui-ux-design",
+      "title": "The Foundation: UI/UX Design",
+      "description": "Learn user interface and user experience design through practical projects and industry-focused training.",
+      "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/ui-ux-design",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "UI/UX Design",
+        "titleMain": "Design better experiences:",
+        "overview": [
+          "The Foundation: UI/UX Design bridges the art of intuitive user visual flow with scientific consumer interaction analysis. You will master wireframing, high-fidelity user workflows, design tokens, and systematic prototypes that align directly with actual software expectations.",
+          "Across our 4-month bootcamp, you will conduct extensive user testing studies and build professional, production-ready product mockups."
+        ],
+        "audience": "Designed for creative thinkers, software designers, and brand managers aged 18–30 aiming to build delightful product journeys.",
+        "heroImage": "https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "UX Research & Journeys",
+            "desc": "Executing demographic validation, persona research, and functional site mapping."
+          },
+          {
+            "id": "02",
+            "name": "UI Systems & Grids",
+            "desc": "Structuring consistent type patterns, custom icon sets, and global component libraries."
+          },
+          {
+            "id": "03",
+            "name": "High-Fidelity Prototyping",
+            "desc": "Constructing click-through previews with natural animations and transitions."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "hardware-maintenance-repairs",
+      "title": "The Foundation: Hardware Maintenance & Repairs",
+      "description": "Acquire practical skills in computer hardware maintenance, troubleshooting, and repairs.",
+      "image": "https://images.unsplash.com/photo-1597872200919-0127a4b10d68?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/hardware-maintenance-repairs",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "Hardware Maintenance & Repairs",
+        "titleMain": "Maintain and repair hardware:",
+        "overview": [
+          "The Foundation: Hardware Maintenance & Repairs delivers technical insight into complex computer circuitry, system diagnostics, and precision component recovery. Students discover how to safely isolate machine failures, replace vital nodes, and execute firmware-level system configuration repairs.",
+          "Our hands-on workshop walks students through structural recovery, hardware logic, thermal management, and professional diagnostic procedures."
+        ],
+        "audience": "Aimed at technically-minded youths, hobbyists, and aspiring maintenance experts aged 18–35 desiring to establish direct electronics repair businesses.",
+        "heroImage": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Component Assembly",
+            "desc": "Safely disassembling microprocessors, Motherboards, RAM, and internal storage blocks."
+          },
+          {
+            "id": "02",
+            "name": "Logic Diagnostic",
+            "desc": "Tracing voltage spikes and resolving localized board shorts with multimeters."
+          },
+          {
+            "id": "03",
+            "name": "Software Recovery",
+            "desc": "Flashing firmware, updating drivers, and optimizing partition structures."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1597872200919-0127a4b10d68?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "electronic-mechatronics-solar-system-installation",
+      "title": "The Foundation: Electronic Mechatronics & Solar System Installation",
+      "description": "Learn electronics, mechatronics, and solar system installation through practical, industry-relevant training.",
+      "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/electronic-mechatronics-solar-system-installation",
+      "details": {
+        "badge": "Digital Skills Programme",
+        "titleItalic": "Electronic Mechatronics & Solar System Installation",
+        "titleMain": "Power the future:",
+        "overview": [
+          "This program delivers a rigorous technical framework covering renewable solar integration and precision electronic mechatronics. Participants systematically build, configure, and troubleshoot industrial-grade inverter units, tracking panels, battery arrays, and micro-controller automation systems.",
+          "Our 4-month practical laboratory simulates full-scale residential and industrial solar generation setups to ensure immediate field readiness."
+        ],
+        "audience": "Perfect for technical apprentices, engineers, and ambitious eco-entrepreneurs aged 18–35 targeting the clean energy sector.",
+        "heroImage": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Solar Array Design",
+            "desc": "Structuring load parameters, solar array tilt layouts, and custom inverter matching."
+          },
+          {
+            "id": "02",
+            "name": "Mechatronics Systems",
+            "desc": "Programming micro-controllers and wiring motion sensors to operational panels."
+          },
+          {
+            "id": "03",
+            "name": "Grid Safety Protocols",
+            "desc": "Enforcing safety earth grounding, surge arrestors, and clean power handoffs."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1620038634442-7cf285f86d63?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1620038634442-7cf285f86d63?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "fashion-design",
+      "title": "The Foundation: Fashion Design",
+      "description": "Learn fashion design through practical garment construction and creative design projects.",
+      "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/fashion-design",
+      "details": {
+        "badge": "Vocational Skills Programme",
+        "titleItalic": "Fashion Design",
+        "titleMain": "Create inspiring fashion:",
+        "overview": [
+          "The Foundation: Fashion Design guides aspiring tailors from foundational pattern mechanics up to high-fashion garment construction. Learn standard body measuring, spatial fabric draping, and professional machine stitching techniques to realize customized runway concepts.",
+          "Over 4 months, students draft complex silhouettes, evaluate diverse fabric behaviors, and organize their debut fashion showcase."
+        ],
+        "audience": "Designed for creative makers, design students, and aspiring fashion designers aged 18–35 with no prior drafting training.",
+        "heroImage": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Pattern Drafting",
+            "desc": "Translating dimensions into customized flat plans and structure patterns."
+          },
+          {
+            "id": "02",
+            "name": "Garment Assembly",
+            "desc": "Mastering seam allowances, pocket mechanics, zippers, and edge finishing."
+          },
+          {
+            "id": "03",
+            "name": "Creative Sourcing",
+            "desc": "Navigating textile properties, stretch limits, and material weight selection."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "fashion-embroidery",
+      "title": "The Foundation: Fashion Embroidery",
+      "description": "Master decorative embroidery techniques for fashion and garment enhancement.",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/fashion-embroidery",
+      "details": {
+        "badge": "Vocational Skills Programme",
+        "titleItalic": "Fashion Embroidery",
+        "titleMain": "Master embroidery techniques:",
+        "overview": [
+          "The Foundation: Fashion Embroidery focuses on elevating standard fashion garments using precision hand-embroidery, beading, and machine patterns. Students master fine stitching, metallic threads, motif layouts, and custom applique integrations.",
+          "Our structural, 4-month project-based classes explore traditional artisanal designs coupled with modern high-fashion details."
+        ],
+        "audience": "Perfect for detail-oriented creatives, textile designers, and sewing enthusiasts aged 18–35 looking to craft premium apparel.",
+        "heroImage": "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Stitch Techniques",
+            "desc": "Mastering outline embroidery, satin stitch, french knots, and chain stitches."
+          },
+          {
+            "id": "02",
+            "name": "Embellishment",
+            "desc": "Integrating sequins, pearls, and glass beads to build tactile dimensional patterns."
+          },
+          {
+            "id": "03",
+            "name": "Frame Management",
+            "desc": "Pre-stretching delicate fabrics, tracing templates, and maintaining tension consistency."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "shoe-making-foundation",
+      "title": "The Foundation: Shoe Making",
+      "description": "Develop practical footwear design and shoe making skills through hands-on vocational training.",
+      "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/shoe-making",
+      "details": {
+        "badge": "Vocational Skills Programme",
+        "titleItalic": "Shoe Making",
+        "titleMain": "Craft quality footwear:",
+        "overview": [
+          "This fundamental course introduces the bedrock skills of commercial footwear creation, from shape drafting to solid outsole assembly. Students learn basic leather-cutting techniques, stitching parameters, sole pairing, and the physical application of functional lasting.",
+          "Over 4 months, you will assemble distinct footwear styles including flats, simple oxfords, and classic everyday sneakers."
+        ],
+        "audience": "Ideal for hands-on makers, footwear enthusiasts, and aspiring cobblers aged 18–35 wishing to establish a local footwear brand.",
+        "heroImage": "https://images.unsplash.com/photo-1515462277126-270d878326e5?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Basic Lasting",
+            "desc": "Understanding shoe lasts, hand-pulling leather uppers, and locking heel counters."
+          },
+          {
+            "id": "02",
+            "name": "Stitching & Assembly",
+            "desc": "Winding vocational machines, skiving edges, and sewing durable leather panels."
+          },
+          {
+            "id": "03",
+            "name": "Outsole Cementing",
+            "desc": "Sanding contact points, activating adhesives, and pressing clean outsoles securely."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1515462277126-270d878326e5?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "hair-dressing",
+      "title": "The Foundation: Hair Dressing",
+      "description": "Learn professional hair dressing techniques through practical salon-based training.",
+      "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/hair-dressing",
+      "details": {
+        "badge": "Vocational Skills Programme",
+        "titleItalic": "Hair Dressing",
+        "titleMain": "Style with confidence:",
+        "overview": [
+          "The Foundation: Hair Dressing details the technical elements of structural hair analysis, sectioning formulas, advanced styling, and clean wig creation. Students gain practical experience in complex weaving, professional braiding styles, hair coloring safety, and thermal manipulation.",
+          "Our salon simulator program guides trainees from initial scalp diagnostic protocols up to high-fashion bridal styling."
+        ],
+        "audience": "Open to creatives and hair enthusiasts aged 18–35 pursuing professional salon operations or freelance styling.",
+        "heroImage": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Styling & Cutting",
+            "desc": "Executing precise parting grids, layered cuts, and texturizing techniques."
+          },
+          {
+            "id": "02",
+            "name": "Chemical Treatments",
+            "desc": "Applying dyes, relaxing creams, and deep-conditioning treatments safely."
+          },
+          {
+            "id": "03",
+            "name": "Salon Management",
+            "desc": "Hygiene standards, client consultation practices, and retail pricing strategies."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    },
+    {
+      "id": "catering-hospitality",
+      "title": "The Foundation: Catering & Hospitality",
+      "description": "Gain practical catering and hospitality skills for employment and entrepreneurship.",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80",
+      "link": "/programs/catering-hospitality",
+      "details": {
+        "badge": "Vocational Skills Programme",
+        "titleItalic": "Catering & Hospitality",
+        "titleMain": "Serve with excellence:",
+        "overview": [
+          "This vocational curriculum delivers culinary mechanics, professional plating, bulk food production, and guest service layouts. Students learn standard kitchen hygiene rules, multi-course recipe execution, and beverage pairing alongside high-efficiency kitchen management.",
+          "Over 4 months, prepare international cuisine, scale ingredients for crowds, and practice elite front-of-house service systems."
+        ],
+        "audience": "Aimed at aspiring culinary artists, bakers, and event service workers aged 18–35 desiring to establish their own catering outfits.",
+        "heroImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+        "stats": [
+          {
+            "label": "Duration",
+            "value": "4 Months"
+          },
+          {
+            "label": "Certification",
+            "value": "Certificate of Completion"
+          },
+          {
+            "label": "Participation Fee",
+            "value": "₦65,000"
+          }
+        ],
+        "pillars": [
+          {
+            "id": "01",
+            "name": "Culinary Prep & Knife Skills",
+            "desc": "Mastering standardized prep work, slicing consistency, and ingredient inventory tracking."
+          },
+          {
+            "id": "02",
+            "name": "Baking Fundamentals",
+            "desc": "Understanding dough structures, pastry proofing, and precise oven temperatures."
+          },
+          {
+            "id": "03",
+            "name": "Hospitality Management",
+            "desc": "Configuring banquet dining, table setups, and professional hospitality communication."
+          }
+        ],
+        "formImage": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=800&q=80",
+        "gallery": [
+          "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=80",
+          "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=500&q=80"
+        ]
+      }
+    }
+  ]
+}

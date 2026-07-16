@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{% block title %}{% endblock %} | Kick Against Laxity Foundation (KALF)</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script src="{{ url_for('static', filename='js/tailwind-config.js') }}"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+
+</head>
+
+<body
+    class="bg-surface dark:bg-primary text-on-surface dark:text-tertiary selection:bg-secondary/30 selection:text-secondary-container transition-colors duration-500 antialiased">
+
+    {% include 'partials/header.html' %}
+
+    <main class="pt-24 dark:text-tertiary {% block main_class %}{% endblock %}">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'partials/footer.html' %}
+
+
+    <!-- Light and Dark Mode -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+                localStorage.setItem('color-theme', 'light');
+            }
+        }
+
+        if (localStorage.getItem('color-theme') === 'dark' ||
+            (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+        themeToggleBtn.addEventListener('click', function () {
+            setTheme(!document.documentElement.classList.contains('dark'));
+        });
+    </script>
+
+    <!-- Nav Dynamic -->
+    <script>
+        const activeClasses = "text-secondary font-bold border-b-2 border-current pb-1";
+        const inactiveClasses = "text-black/70 dark:text-white/70 dark:hover:text-secondary hover:text-secondary transition-all duration-300 border-b border-transparent hover:border-current pb-0.5 tracking-wide";
+
+        const normalize = path => path.replace(/\/$/, "");
+        const currentPath = normalize(window.location.pathname);
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.classList.add("font-sans", "text-sm");
+            const linkPath = normalize(new URL(link.href).pathname);
+            if (currentPath === linkPath) {
+                link.classList.add(...activeClasses.split(" "));
+            } else {
+                link.classList.add(...inactiveClasses.split(" "));
+            }
+        });
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuBtn.querySelector('.material-symbols-outlined');
+
+        menuBtn.addEventListener('click', () => {
+            const isClosed = mobileMenu.classList.contains('max-h-0');
+            if (isClosed) {
+                mobileMenu.classList.remove('max-h-0');
+                mobileMenu.classList.add('max-h-[500px]', 'opacity-100');
+                menuIcon.style.transform = 'rotate(90deg)';
+                setTimeout(() => { menuIcon.innerText = 'close'; menuIcon.style.transform = 'rotate(0deg)'; }, 150);
+            } else {
+                mobileMenu.classList.remove('max-h-[500px]', 'opacity-100');
+                mobileMenu.classList.add('max-h-0');
+                menuIcon.style.transform = 'rotate(-90deg)';
+                setTimeout(() => { menuIcon.innerText = 'menu'; menuIcon.style.transform = 'rotate(0deg)'; }, 150);
+            }
+        });
+    </script>
+
+    <!-- Programs page display -->
+    
+
+</body>
+
+</html>

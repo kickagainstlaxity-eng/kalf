@@ -1,0 +1,36 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Flask / local data
+instance/
+*.log
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
