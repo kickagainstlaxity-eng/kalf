@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Blog{% endblock %}
-{% block main_class %}pb-20{% endblock %}
+{% block main_class %}pb-20 pt-24{% endblock %}
 
 {% block content %}
 
@@ -76,7 +76,7 @@
             </p>
             <div class="flex items-center justify-between mt-auto">
               <span class="text-xs text-outline dark:text-white/40">{{ post.formatted_date }}</span>
-              <a class="text-secondary font-bold text-sm inline-flex items-center gap-2 group/link" href="/blog/{{ post.id }}">
+              <a class="text-secondary font-bold text-sm inline-flex items-center gap-2 group/link" href="{{ url_for('blog.blog_post_detail', blog_id=post.id) }}">
                 Read More 
                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
               </a>

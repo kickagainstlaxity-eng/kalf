@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Programs{% endblock %}
-{% block main_class %}pb-20{% endblock %}
+{% block main_class %}pb-20 pt-24{% endblock %}
 
 {% block content %}
 
@@ -122,17 +122,21 @@
 
       <!-- Tabs -->
       <div class="flex gap-8 border-b border-outline-variant/30">
-        <button id="btn-upcoming" class="tab-btn pb-4 transition-all">
+        <!-- Active by Default -->
+        <button id="btn-upcoming"
+          class="tab-btn pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all">
           Upcoming Events
         </button>
 
-        <button id="btn-past" class="tab-btn pb-4 transition-all">
+        <!-- Inactive by Default -->
+        <button id="btn-past"
+          class="tab-btn pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all">
           Past Events
         </button>
       </div>
 
       <!-- Upcoming Events Sub-grid -->
-      <div id="upcoming-events-list" class="event-tab-content grid grid-cols-1 gap-4">
+      <div id="upcoming-events-list" class="event-tab-content pt-2 grid grid-cols-1 gap-4">
         {% if upcoming_events %}
         {% for event in upcoming_events %}
         <div
@@ -157,8 +161,7 @@
             <span class="px-8 py-3 bg-neutral-500 text-white rounded-full font-bold text-sm uppercase">Fully
               Booked</span>
             {% else %}
-            <button
-              class="cursor-pointer w-full md:w-auto px-8 py-3 bg-secondary dark:bg-secondary/20 text-white border border-transparent dark:border-secondary/50 rounded-full font-bold group-hover:bg-white group-hover:text-secondary transition-all">RSVP</button>
+            <a href="{{ event.link or '#' }}" class="cursor-pointer w-full md:w-auto px-8 py-3 bg-secondary dark:bg-secondary/20 text-white border border-transparent dark:border-secondary/50 rounded-full font-bold group-hover:bg-white group-hover:text-secondary transition-all">RSVP</a>
             {% endif %}
           </div>
         </div>
@@ -172,7 +175,7 @@
       </div>
 
       <!-- Past Events Sub-grid (Hidden by default) -->
-      <div id="past-events-list" class="event-tab-content hidden grid grid-cols-1 gap-4">
+      <div id="past-events-list" class="event-tab-content pt-2 hidden grid grid-cols-1 gap-4">
         {% if past_events %}
         {% for event in past_events %}
         <div
@@ -210,40 +213,39 @@
 <!-- Clean, Lightweight Client Switcher for Tab UI and Program Filtering -->
 <script>
   // Tab Switching Logic for Convenings/Events
-  // Tab Switching Logic for Convenings/Events
-const btnUpcoming = document.getElementById('btn-upcoming');
-const btnPast = document.getElementById('btn-past');
-const upcomingList = document.getElementById('upcoming-events-list');
-const pastList = document.getElementById('past-events-list');
+  const btnUpcoming = document.getElementById('btn-upcoming');
+  const btnPast = document.getElementById('btn-past');
+  const upcomingList = document.getElementById('upcoming-events-list');
+  const pastList = document.getElementById('past-events-list');
 
-function switchTab(showUpcoming) {
-  if (showUpcoming) {
-    upcomingList.classList.remove("hidden");
-    pastList.classList.add("hidden");
+  function switchTab(showUpcoming) {
+    if (showUpcoming) {
+      upcomingList.classList.remove("hidden");
+      pastList.classList.add("hidden");
 
-    // Active
-    btnUpcoming.className =
-      "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
+      // Active Style
+      btnUpcoming.className =
+        "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
 
-    // Inactive
-    btnPast.className =
-      "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
-  } else {
-    upcomingList.classList.add("hidden");
-    pastList.classList.remove("hidden");
+      // Inactive Style
+      btnPast.className =
+        "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
+    } else {
+      upcomingList.classList.add("hidden");
+      pastList.classList.remove("hidden");
 
-    // Active
-    btnPast.className =
-      "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
+      // Active Style
+      btnPast.className =
+        "pb-4 text-primary dark:text-white font-bold border-b-2 border-secondary transition-all";
 
-    // Inactive
-    btnUpcoming.className =
-      "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
+      // Inactive Style
+      btnUpcoming.className =
+        "pb-4 text-slate-500 dark:text-slate-500 hover:text-primary dark:hover:text-slate-300 transition-all";
+    }
   }
-}
 
-btnUpcoming.addEventListener('click', () => switchTab(true));
-btnPast.addEventListener('click', () => switchTab(false));
+  btnUpcoming.addEventListener('click', () => switchTab(true));
+  btnPast.addEventListener('click', () => switchTab(false));
 
   // Client-Side Dynamic Category Filtering for Active Programs
   const filterButtons = document.querySelectorAll('.filter-btn');

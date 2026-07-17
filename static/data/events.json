@@ -1,18 +1,100 @@
 {
   "upcoming": [
     {
-      "title": "Impact Summit: Urban Resilience Forum",
-      "date": "2026-10-24",
+      "title": "The Scholars Guild: Shoe Making",
+      "date": "2026-07-20",
       "time": "09:00 AM",
-      "location": "Lagos, NG",
-      "fullyBooked": false
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/shoe-making"
     },
     {
-      "title": "Leadership Bootcamp",
-      "date": "2026-11-12",
-      "time": "10:00 AM",
-      "location": "Abuja, NG",
-      "fullyBooked": true
+      "title": "The Foundation: Web Design & Development",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/web-design-development"
+    },
+    {
+      "title": "The Foundation: Graphics Design",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/graphics-design"
+    },
+    {
+      "title": "The Foundation: Data Analysis",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/data-analysis"
+    },
+    {
+      "title": "The Foundation: UI/UX Design",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/ui-ux-design"
+    },
+    {
+      "title": "The Foundation: Hardware Maintenance & Repairs",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/hardware-maintenance-repairs"
+    },
+    {
+      "title": "The Foundation: Electronic Mechatronics & Solar System Installation",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/electronic-mechatronics-solar-system-installation"
+    },
+    {
+      "title": "The Foundation: Fashion Design",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/fashion-design"
+    },
+    {
+      "title": "The Foundation: Fashion Embroidery",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/fashion-embroidery"
+    },
+    {
+      "title": "The Foundation: Shoe Making",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/shoe-making"
+    },
+    {
+      "title": "The Foundation: Hair Dressing",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/hair-dressing"
+    },
+    {
+      "title": "The Foundation: Catering & Hospitality",
+      "date": "2026-07-20",
+      "time": "09:00 AM",
+      "location": "Benue, NG",
+      "fullyBooked": false,
+      "link": "/programs/catering-hospitality"
     }
   ],
   "past": [

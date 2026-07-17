@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1c7af276-8471-477b-8069-92ac7cfeae03",
+        "program_id": "kalf-week",
+        "program_title": "KALF Week",
+        "full_name": "Ocholi",
+        "email": "ocholigocholi@gmail.com",
+        "amount": "Free",
+        "created_at": "2026-07-17T02:13:02.706471",
+        "status": "free"
+    },
+    {
+        "id": "0569fb73-5132-49c2-a437-a617a70517c2",
+        "program_id": "hair-dressing",
+        "program_title": "The Foundation: Hair Dressing",
+        "full_name": "rabboni",
+        "email": "ocholiadam@gmail.com",
+        "amount": "₦65,000",
+        "created_at": "2026-07-17T02:14:50.846819",
+        "status": "paid",
+        "paystack_ref": "0569fb73-5132-49c2-a437-a617a70517c2"
+    },
+    {
+        "id": "cb426bd4-a4af-4606-8205-75168af054d0",
+        "program_id": "vanguard",
+        "program_title": "Vanguard Pathways",
+        "full_name": "Samuel",
+        "email": "ocholi@icloud.com",
+        "amount": "Free",
+        "created_at": "2026-07-17T02:21:48.353522",
+        "status": "free"
+    },
+    {
+        "id": "b71717e6-c961-4d81-b830-fdbbd5878764",
+        "program_id": "hair-dressing",
+        "program_title": "The Foundation: Hair Dressing",
+        "full_name": "John",
+        "email": "john@gmail.com",
+        "amount": "₦65,000",
+        "created_at": "2026-07-17T02:24:48.101416",
+        "status": "paid",
+        "paystack_ref": "b71717e6-c961-4d81-b830-fdbbd5878764"
+    }
+]

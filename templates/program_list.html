@@ -50,7 +50,8 @@
 <section class="py-24 px-6 md:px-12 bg-white dark:bg-primary">
     <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4">
-            <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">About the Program</span>
+            <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">About the
+                Program</span>
             <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary dark:text-white leading-tight">
                 What You'll <span class="text-secondary italic">Experience</span>
             </h2>
@@ -58,19 +59,21 @@
         <div class="lg:col-span-8">
             <div class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed space-y-6">
                 {% if program.details and program.details.overview %}
-                    {% for para in program.details.overview %}
-                    <p>{{ para }}</p>
-                    {% endfor %}
+                {% for para in program.details.overview %}
+                <p>{{ para }}</p>
+                {% endfor %}
                 {% else %}
-                    <p>{{ program.description }}</p>
+                <p>{{ program.description }}</p>
                 {% endif %}
             </div>
 
             {% if program.details and program.details.audience %}
-            <div class="mt-10 flex items-start gap-4 p-6 bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5">
+            <div
+                class="mt-10 flex items-start gap-4 p-6 bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5">
                 <span class="material-symbols-outlined text-secondary">groups</span>
                 <div>
-                    <span class="block text-[10px] font-bold tracking-widest uppercase text-slate-400 mb-1">Who It's For</span>
+                    <span class="block text-[10px] font-bold tracking-widest uppercase text-slate-400 mb-1">Who It's
+                        For</span>
                     <p class="text-sm text-slate-600 dark:text-slate-400">{{ program.details.audience }}</p>
                 </div>
             </div>
@@ -112,10 +115,28 @@
         <div class="lg:col-span-5">
             <img id="form-img" alt="Tools" class="w-full aspect-[4/5] object-cover rounded-2xl mb-8 shadow-2xl"
                 src="{{ program.details.formImage or program.image }}" />
+
+            {# Move the namespace parsing up before this section so both columns can access it #}
+            {% set ns = namespace(investment_stat=none) %}
+            {% if program.details and program.details.stats %}
+            {% for stat in program.details.stats %}
+            {% if "investment" in stat.label|lower or "cost" in stat.label|lower or "fee" in stat.label|lower %}
+            {% set ns.investment_stat = stat.value %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+
+            {% if ns.investment_stat and ns.investment_stat != "₦0" and ns.investment_stat|lower != "free" %}
             <h2 class="text-4xl font-headline font-bold mb-6 italic text-primary dark:text-white">Secure your place in
                 the craft.</h2>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Acceptance into the Academy is highly
-                competitive. Each cohort is hand-selected to ensure optimal mentorship.</p>
+                competitive. Each cohort is hand-selected to ensure optimal, direct mentorship.</p>
+            {% else %}
+            <h2 class="text-4xl font-headline font-bold mb-6 italic text-primary dark:text-white">Claim your free
+                invitation.</h2>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Access to this session is fully sponsored by
+                our partners, but capacity is strictly capped. Register early to guarantee entry.</p>
+            {% endif %}
         </div>
 
         <div
@@ -129,7 +150,8 @@
             </div>
 
             <!-- DYNAMIC FORM ACTION TARGETING ENROLLMENT ROUTE -->
-            <form class="space-y-8" action="{{ url_for('programs.enroll_program', program_id=program['id']) }}" method="POST">
+            <form class="space-y-8" action="{{ url_for('programs.enroll_program', program_id=program['id']) }}"
+                method="POST">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="space-y-2">
                         <label class="text-[10px] font-bold tracking-widest uppercase text-slate-400">Full Name</label>
@@ -221,7 +243,8 @@
 {% if program.details and program.details.gallery %}
 <section class="py-24 bg-primary overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-        <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">Behind the Scenes</span>
+        <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">Behind the
+            Scenes</span>
         <h2 class="text-4xl md:text-5xl font-headline font-bold text-white">
             Life Inside <span class="text-secondary italic">{{ program.details.titleMain or program.title }}</span>
         </h2>
@@ -232,15 +255,21 @@
 
     <div id="gallery-container" class="relative">
         <!-- Edge fades so images feel like they scroll "into" the background -->
-        <div class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-primary to-transparent z-10"></div>
-        <div class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-primary to-transparent z-10"></div>
+        <div
+            class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-primary to-transparent z-10">
+        </div>
+        <div
+            class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-primary to-transparent z-10">
+        </div>
 
         <div class="flex gap-6 animate-scroll whitespace-nowrap hover:[animation-play-state:paused]">
             {% for img_url in program.details.gallery %}
             <div class="inline-block relative flex-shrink-0 group">
                 <img src="{{ img_url }}" alt="{{ program.title }} — program gallery photo"
                     class="h-64 w-96 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105" />
-                <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div
+                    class="absolute inset-0 rounded-xl bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
             </div>
             {% endfor %}
         </div>
@@ -254,8 +283,10 @@
     <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
             <div class="max-w-xl">
-                <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">Keep Exploring</span>
-                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary dark:text-white">Other Programs You May Like</h2>
+                <span class="text-[10px] tracking-[0.3em] text-secondary block font-bold uppercase mb-3">Keep
+                    Exploring</span>
+                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary dark:text-white">Other Programs You
+                    May Like</h2>
             </div>
         </div>
 
@@ -269,7 +300,8 @@
                 </div>
                 <div class="p-6 flex flex-col gap-3">
                     {% if rec.category %}
-                    <span class="inline-flex w-fit items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-secondary/10 text-secondary border border-secondary/20">
+                    <span
+                        class="inline-flex w-fit items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-secondary/10 text-secondary border border-secondary/20">
                         {{ rec.category }}
                     </span>
                     {% endif %}
@@ -279,7 +311,8 @@
                     <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
                         {{ rec.description or "" }}
                     </p>
-                    <span class="inline-flex items-center gap-2 text-secondary font-semibold text-sm mt-2 group-hover:gap-3 transition-all duration-200">
+                    <span
+                        class="inline-flex items-center gap-2 text-secondary font-semibold text-sm mt-2 group-hover:gap-3 transition-all duration-200">
                         Learn More
                         <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </span>

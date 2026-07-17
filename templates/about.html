@@ -2,6 +2,8 @@
 
 {% block title %}About{% endblock %}
 
+{% block main_class %}pb-20 pt-16{% endblock %}
+
 {% block content %}
 
   <!-- Hero Section -->
@@ -291,7 +293,7 @@
           </p>
         </div>
 
-        <a href="/programs" class="hidden md:flex items-center text-secondary font-semibold hover:gap-3 transition-all">
+        <a href="{{ url_for('programs.programs') }}" class="hidden md:flex items-center text-secondary font-semibold hover:gap-3 transition-all">
           View All Programs
           <span class="material-symbols-outlined ml-2">arrow_forward</span>
         </a>
@@ -305,7 +307,7 @@
           <h4 class="font-h3 text-primary dark:text-on-primary mb-2">The Cultivator</h4>
           <p class="font-body-md text-on-surface-variant dark:text-outline mb-8 flex-grow">A deep-dive intensive
             mentorship program for emerging student leaders.</p>
-          <a href="#" class="text-secondary font-bold flex items-center group">Explore<span
+          <a href="{{ url_for('programs.program_detail', program_id='the-cultivator') }}" class="text-secondary font-bold flex items-center group">Explore<span
               class="material-symbols-outlined ml-1 group-hover:ml-2 transition-all">arrow_right_alt</span></a>
         </div>
 
@@ -314,7 +316,7 @@
           <h4 class="font-h3 text-primary dark:text-on-primary mb-2">KALF Symposium</h4>
           <p class="font-body-md text-on-surface-variant dark:text-outline mb-8 flex-grow">Annual gathering of
             brilliant minds discussing youth agency, leadership, and societal change.</p>
-          <a href="#" class="text-secondary font-bold flex items-center group">Explore<span
+          <a href="{{ url_for('programs.program_detail', program_id='kalf-symposium') }}" class="text-secondary font-bold flex items-center group">Explore<span
               class="material-symbols-outlined ml-1 group-hover:ml-2 transition-all">arrow_right_alt</span></a>
         </div>
 
@@ -323,7 +325,7 @@
           <h4 class="font-h3 text-primary dark:text-on-primary mb-2">KALF Debate</h4>
           <p class="font-body-md text-on-surface-variant dark:text-outline mb-8 flex-grow">A structured platform
             fostering critical thinking, public speaking, and intellectual confidence.</p>
-          <a href="#" class="text-secondary font-bold flex items-center group">Explore<span
+          <a href="{{ url_for('programs.program_detail', program_id='kalf-debate') }}" class="text-secondary font-bold flex items-center group">Explore<span
               class="material-symbols-outlined ml-1 group-hover:ml-2 transition-all">arrow_right_alt</span></a>
         </div>
 
@@ -332,7 +334,7 @@
           <h4 class="font-h3 text-primary dark:text-on-primary mb-2">KALF Week</h4>
           <p class="font-body-md text-on-surface-variant dark:text-outline mb-8 flex-grow">A week-long convergence of
             youth, leadership training, and community impact initiatives.</p>
-          <a href="#" class="text-secondary font-bold flex items-center group">Explore<span
+          <a href="{{ url_for('programs.program_detail', program_id='kalf-week') }}" class="text-secondary font-bold flex items-center group">Explore<span
               class="material-symbols-outlined ml-1 group-hover:ml-2 transition-all">arrow_right_alt</span></a>
         </div>
 
@@ -394,8 +396,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div class="relative">
           <div class="aspect-square bg-surface-container-low editorial-shadow overflow-hidden">
-            <img alt="CEO Portrait" class="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCL4PQBAXL7kUH4uYmvwzLxzQrz_0HOKvq3Bx8-EgJ8akIUfoSzbZGjMh1S_h3I0SqZ7HtZN_zJUNiwvP-CPNJB-w9pxZsoBhCbVbXuuyxfx6tozLpaoymY-Ai5wdiji9GPJ7ELth3SAvlX_HzvS5x8JrueHeHAaoLjztwzY_pIiCDld_EoIe5f8F0Ezspoib3quwLjJblNIzO6b8QyP9q_LHyaYNfkUoeBIElpMyxs9RQRlBEt0OA77Id-KouYKp3D7MnKk41sio" />
+            <img alt="CEO Portrait" class="w-full h-full object-cover object-top"
+              src="https://lh3.googleusercontent.com/d/1leIyoe6Cues2gEWv7TWoEBE6QSl5bYcj" />
           </div>
           <div class="absolute -bottom-8 -right-8 bg-secondary-container p-8 hidden md:block">
             <span class="material-symbols-outlined text-on-secondary-container text-4xl">format_quote</span>
@@ -436,7 +438,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Peace Sontyo"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvUofr-kadPsAg9r_oyPTqLr1TW6HE5GQrHFjtQji0ATdQIABIG3niWFBOBE3IfbFIkjNUAdl_qg-NQVBGVAC3Hzrqchg1qDCQZ7xoI4Mbyrc86MjiE172UOEBeBk2uL8fKK5y-lSUETHw2gcuHVDOO4HS5K-Z_TW7cAeHQhi8HmW90JurAU_ng0_4Pzfx2Cnty0nA3u_mz2df3v0PqI3GQ2wcCzQWfYcRrf01h4RTdnHoMaXgUmw2KN3idJR11LxmIGiqP-y0CRE" />
+            src="https://lh3.googleusercontent.com/d/1leIyoe6Cues2gEWv7TWoEBE6QSl5bYcj" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Peace Sontyo</h4>
@@ -447,7 +449,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Kumaga Aondoungwa"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8DTWEBEankbGRotch60mLJ78de-bfMT_onwAMwCuqb3A9o2gHU1eOHmzmQgEt3Vymncp6am3ISmSuvh06QGxF0EARaXmrpC638TFcQhS3ZEoFNA0nmJLOCMB8HcmtUXOXUfLiwJbDiu3A9JUTHcaFbytbxS7nqZi8EQs1Uu-OuGYSHwE_RLeaE8ApKpSbHARPJUN0XRS55bAp1Tt3z5sXFokU9RpNZiQFjF7Yj0sW4AHKXAozwh-C3lBn-IIyNPFVF6aAoVTWj8" />
+            src="https://lh3.googleusercontent.com/d/1leIyoe6Cues2gEWv7TWoEBE6QSl5bYcj" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Kumaga Aondoungwa</h4>
@@ -458,7 +460,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Sesugh Amenger"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC97Ib8AYU73vRuSalkD0K0iqTMc4d52d4KLu1ztCaaGEViJpkclyiSi2q2isxGb9ULl2fcGRLMf1UNZMjwhWTNhT24mQYrM0RxvQ9Lw1kN8il4sBC-UWK1BlFCQzYhT6qlv8xtsxCrRBlF2u-crLkbghUcHNkvyZ3pw7AQc3Yts4z27sFomzohBYEi4ry4ir5Ri6-U8vFTwGBra_T-IlBt80_OHGLXEtlQ4VfSY8DBFGxiIkzAY7RFTQNV-ADBS56-OHi0DREAdtQ" />
+            src="https://lh3.googleusercontent.com/d/1WPcogYmxRJO20_qdPBD0ulJqXtxv77BB" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Sesugh Amenger</h4>
@@ -469,7 +471,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Charles Tyavyar"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+            src="https://lh3.googleusercontent.com/d/1H32aypDRSIxW0TX7LX9fj3Z77u-pg4-W" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Charles Tyavyar</h4>
@@ -492,7 +494,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Dr. Tahav J. Kachina"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvUofr-kadPsAg9r_oyPTqLr1TW6HE5GQrHFjtQji0ATdQIABIG3niWFBOBE3IfbFIkjNUAdl_qg-NQVBGVAC3Hzrqchg1qDCQZ7xoI4Mbyrc86MjiE172UOEBeBk2uL8fKK5y-lSUETHw2gcuHVDOO4HS5K-Z_TW7cAeHQhi8HmW90JurAU_ng0_4Pzfx2Cnty0nA3u_mz2df3v0PqI3GQ2wcCzQWfYcRrf01h4RTdnHoMaXgUmw2KN3idJR11LxmIGiqP-y0CRE" />
+            src="https://lh3.googleusercontent.com/d/1H32aypDRSIxW0TX7LX9fj3Z77u-pg4-W" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Dr. Tahav J. Kachina</h4>
@@ -503,7 +505,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Dr. Anzaa Msonter"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8DTWEBEankbGRotch60mLJ78de-bfMT_onwAMwCuqb3A9o2gHU1eOHmzmQgEt3Vymncp6am3ISmSuvh06QGxF0EARaXmrpC638TFcQhS3ZEoFNA0nmJLOCMB8HcmtUXOXUfLiwJbDiu3A9JUTHcaFbytbxS7nqZi8EQs1Uu-OuGYSHwE_RLeaE8ApKpSbHARPJUN0XRS55bAp1Tt3z5sXFokU9RpNZiQFjF7Yj0sW4AHKXAozwh-C3lBn-IIyNPFVF6aAoVTWj8" />
+            src="https://lh3.googleusercontent.com/d/1rSF6hpXKs6AS_dGZLRSPWErk9GtWyJYR" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Dr. Anzaa Msonter</h4>
@@ -514,7 +516,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Phd. Mrs. Iveren Philip"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC97Ib8AYU73vRuSalkD0K0iqTMc4d52d4KLu1ztCaaGEViJpkclyiSi2q2isxGb9ULl2fcGRLMf1UNZMjwhWTNhT24mQYrM0RxvQ9Lw1kN8il4sBC-UWK1BlFCQzYhT6qlv8xtsxCrRBlF2u-crLkbghUcHNkvyZ3pw7AQc3Yts4z27sFomzohBYEi4ry4ir5Ri6-U8vFTwGBra_T-IlBt80_OHGLXEtlQ4VfSY8DBFGxiIkzAY7RFTQNV-ADBS56-OHi0DREAdtQ" />
+            src="https://lh3.googleusercontent.com/d/1WPcogYmxRJO20_qdPBD0ulJqXtxv77BB" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Phd. Mrs. Iveren Philip</h4>
@@ -525,7 +527,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Nur. Steven Akeren"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+            src="https://lh3.googleusercontent.com/d/1r2MSxITEbJqZ2pUixJXRiR4RHUgHefqQ" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Nur. Steven Akeren</h4>
@@ -536,7 +538,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Mr. Chia Sonter"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+            src="https://lh3.googleusercontent.com/d/1leIyoe6Cues2gEWv7TWoEBE6QSl5bYcj" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Mr. Chia Sonter</h4>
@@ -547,7 +549,7 @@
         <div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
           <img alt="Mr. Kumaga Aondoungwa"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+            src="https://lh3.googleusercontent.com/d/1wAoM1csVbQvmnfoO0VjlOR62gzui3gLh" />
         </div>
         <div>
           <h4 class="font-headline text-xl font-bold">Mr. Kumaga Aondoungwa</h4>
@@ -568,7 +570,7 @@
         <div class="[transform:rotate(0deg)_translateY(-270px)]">
           <div class="[transform:rotate(-0deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvUofr-kadPsAg9r_oyPTqLr1TW6HE5GQrHFjtQji0ATdQIABIG3niWFBOBE3IfbFIkjNUAdl_qg-NQVBGVAC3Hzrqchg1qDCQZ7xoI4Mbyrc86MjiE172UOEBeBk2uL8fKK5y-lSUETHw2gcuHVDOO4HS5K-Z_TW7cAeHQhi8HmW90JurAU_ng0_4Pzfx2Cnty0nA3u_mz2df3v0PqI3GQ2wcCzQWfYcRrf01h4RTdnHoMaXgUmw2KN3idJR11LxmIGiqP-y0CRE" />
+              src="https://lh3.googleusercontent.com/d/1H32aypDRSIxW0TX7LX9fj3Z77u-pg4-W" />
             <p class="text-sm font-medium">Dr. Tahav J. Kachina</p>
           </div>
         </div>
@@ -577,7 +579,7 @@
         <div class="[transform:rotate(60deg)_translateY(-270px)]">
           <div class="[transform:rotate(-60deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8DTWEBEankbGRotch60mLJ78de-bfMT_onwAMwCuqb3A9o2gHU1eOHmzmQgEt3Vymncp6am3ISmSuvh06QGxF0EARaXmrpC638TFcQhS3ZEoFNA0nmJLOCMB8HcmtUXOXUfLiwJbDiu3A9JUTHcaFbytbxS7nqZi8EQs1Uu-OuGYSHwE_RLeaE8ApKpSbHARPJUN0XRS55bAp1Tt3z5sXFokU9RpNZiQFjF7Yj0sW4AHKXAozwh-C3lBn-IIyNPFVF6aAoVTWj8" />
+              src="https://lh3.googleusercontent.com/d/1rSF6hpXKs6AS_dGZLRSPWErk9GtWyJYR" />
             <p class="text-sm font-medium">Dr. Anzaa Msonter</p>
           </div>
         </div>
@@ -586,7 +588,7 @@
         <div class="[transform:rotate(120deg)_translateY(-270px)]">
           <div class="[transform:rotate(-120deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC97Ib8AYU73vRuSalkD0K0iqTMc4d52d4KLu1ztCaaGEViJpkclyiSi2q2isxGb9ULl2fcGRLMf1UNZMjwhWTNhT24mQYrM0RxvQ9Lw1kN8il4sBC-UWK1BlFCQzYhT6qlv8xtsxCrRBlF2u-crLkbghUcHNkvyZ3pw7AQc3Yts4z27sFomzohBYEi4ry4ir5Ri6-U8vFTwGBra_T-IlBt80_OHGLXEtlQ4VfSY8DBFGxiIkzAY7RFTQNV-ADBS56-OHi0DREAdtQ" />
+              src="https://lh3.googleusercontent.com/d/1WPcogYmxRJO20_qdPBD0ulJqXtxv77BB" />
             <p class="text-sm font-medium">Phd. Mrs. Iveren Philip</p>
           </div>
         </div>
@@ -595,7 +597,7 @@
         <div class="[transform:rotate(180deg)_translateY(-270px)]">
           <div class="[transform:rotate(-180deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+              src="https://lh3.googleusercontent.com/d/1r2MSxITEbJqZ2pUixJXRiR4RHUgHefqQ" />
             <p class="text-sm font-medium">Nur. Steven Akeren</p>
           </div>
         </div>
@@ -604,7 +606,7 @@
         <div class="[transform:rotate(240deg)_translateY(-270px)]">
           <div class="[transform:rotate(-240deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+              src="https://lh3.googleusercontent.com/d/1leIyoe6Cues2gEWv7TWoEBE6QSl5bYcj" />
             <p class="text-sm font-medium">Mr. Chia Sonter</p>
           </div>
         </div>
@@ -613,7 +615,7 @@
         <div class="[transform:rotate(300deg)_translateY(-270px)]">
           <div class="[transform:rotate(-300deg)] w-28 text-center space-y-2">
             <img class="w-full h-36 object-cover rounded-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRhstXzhoQfk1wDMfhiM5DUukr3Msqzz-oKOx3HtGedyU6k6Tn8gdyCcwvMZvyjio6FCTERK-fXA9ZHfffBKaXx9pgujcg2gMS4podx3YA2O0-kGAWsRadApft7_f4DyzwY3UDttRyFbo-T07buVf9ptC7tqbfZmqT19ZJR79XZw7r6pVwAc_AxBv2Lp8yY8B4hIq530WFI76pTGl8HSwn4hle0s-wuScBkFtQIUy8XCFR9MHj4b9IORgYLqA_zp8FSFqQ64YxGf0" />
+              src="https://lh3.googleusercontent.com/d/1wAoM1csVbQvmnfoO0VjlOR62gzui3gLh" />
             <p class="text-sm font-medium">Mr. Kumaga Aondoungwa</p>
           </div>
         </div>
@@ -632,7 +634,7 @@
           dismantle laxity and build a future rooted in intentional action and professional discipline.</p>
       </div>
       <div class="relative z-10">
-        <a href="/contact"><button
+        <a href="{{ url_for('main.contact') }}"><button
             class="bg-primary text-on-primary px-12 py-5 font-bold text-lg active:scale-95 transition-all editorial-shadow whitespace-nowrap">Partner
             with Us</button></a>
       </div>

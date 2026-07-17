@@ -2,19 +2,22 @@
 
 {% block title %}Donate{% endblock %}
 
-{% block main_class %}pb-20{% endblock %}
+{% block main_class %}pb-20 pt-24{% endblock %}
 
 {% block content %}
 
 <header class="max-w-7xl mx-auto px-6 mb-16 text-center md:text-left">
   <div
     class="inline-block bg-secondary-container/30 text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
-    Support Our Mission</div>
+    Support Our Mission
+  </div>
   <h1 class="font-headline text-5xl md:text-7xl font-black text-primary dark:text-white leading-tight max-w-4xl">
-    Your Support<br />Makes a Difference</h1>
-  <p class="font-body text-xl text-on-surface-variant dark:text-white/60 mt-6 max-w-2xl leading-relaxed">Join a
-    global community dedicated to eradicating laxity and fostering disciplined innovation. Every contribution fuels
-    systemic change.</p>
+    Your Support<br />Makes a Difference
+  </h1>
+  <p class="font-body text-xl text-on-surface-variant dark:text-white/60 mt-6 max-w-2xl leading-relaxed">
+    Join a global community dedicated to eradicating laxity and fostering disciplined innovation. Every contribution
+    fuels systemic change.
+  </p>
 </header>
 
 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -33,8 +36,7 @@
           <span id="step-label-1"
             class="text-xs font-bold uppercase tracking-wider text-secondary transition-all duration-300">Amount</span>
         </div>
-        <div class="flex-1 h-[2px] bg-slate-200 dark:bg-white/10 mx-4 mt-[-20px] step-connector" id="connector-1">
-          </div>
+        <div class="flex-1 h-[2px] bg-slate-200 dark:bg-white/10 mx-4 mt-[-20px] step-connector" id="connector-1"></div>
         <div class="flex flex-col items-center gap-2">
           <div id="step-circle-2"
             class="w-10 h-10 rounded-full bg-slate-200 dark:bg-white/10 text-slate-500 dark:text-white/40 flex items-center justify-center font-bold text-sm transition-all duration-300">
@@ -42,8 +44,7 @@
           <span id="step-label-2"
             class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-white/40 transition-all duration-300">Personal</span>
         </div>
-        <div class="flex-1 h-[2px] bg-slate-200 dark:bg-white/10 mx-4 mt-[-20px] step-connector" id="connector-2">
-          </div>
+        <div class="flex-1 h-[2px] bg-slate-200 dark:bg-white/10 mx-4 mt-[-20px] step-connector" id="connector-2"></div>
         <div class="flex flex-col items-center gap-2">
           <div id="step-circle-3"
             class="w-10 h-10 rounded-full bg-slate-200 dark:bg-white/10 text-slate-500 dark:text-white/40 flex items-center justify-center font-bold text-sm transition-all duration-300">
@@ -53,154 +54,172 @@
         </div>
       </div>
 
-      <!-- STEP 1 -->
-      <div id="step-1" class="step-panel active">
-        <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Select Donation Amount</h3>
-        <p class="text-sm text-slate-500 dark:text-white/50 mb-8">Choose a preset amount or enter a custom one below.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-          <button type="button" data-amount="5000"
-            class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦5,000</button>
-          <button type="button" data-amount="10000"
-            class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦10,000</button>
-          <button type="button" data-amount="25000"
-            class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦25,000</button>
-          <button type="button" data-amount="50000"
-            class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦50,000</button>
-        </div>
-        <div class="mb-8">
-          <label for="customAmount" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Custom Amount (₦)</label>
-          <div class="relative">
-            <span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-lg text-slate-400">₦</span>
-            <input id="customAmount" type="number" min="100"
-              class="w-full pl-10 pr-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-lg font-medium text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
-              placeholder="Enter amount" />
-          </div>
-          <p id="amountError" class="text-red-500 text-xs mt-2 hidden">Please select or enter a donation amount.</p>
-        </div>
-        <div id="selectedAmountDisplay"
-          class="hidden mb-8 p-4 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center gap-3">
-          <span class="material-symbols-outlined text-secondary">check_circle</span>
-          <p class="text-sm font-semibold text-secondary">Selected: <span id="selectedAmountText"></span></p>
-        </div>
-        <button type="button" onclick="goToStep(2)"
-          class="w-full bg-secondary text-white py-5 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
-          Continue to Personal Info
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
-      </div>
+      <!-- MAIN FORM WRAPPER -->
+      <form id="donationForm" method="POST" action="{{ url_for('payments.initiate_donation') }}">
 
-      <!-- STEP 2 -->
-      <div id="step-2" class="step-panel">
-        <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Personal Information</h3>
-        <p class="text-sm text-slate-500 dark:text-white/50 mb-8">We need a few details to process your donation and send a receipt.</p>
-        <div class="space-y-6">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label for="firstName" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">First Name <span class="text-red-500">*</span></label>
-              <input id="firstName" type="text" autocomplete="given-name"
-                class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
-                placeholder="John" />
-              <p id="firstNameError" class="text-red-500 text-xs mt-1 hidden">First name is required.</p>
+        <!-- STEP 1: Amount selection -->
+        <div id="step-1" class="step-panel active">
+          <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Select Donation Amount</h3>
+          <p class="text-sm text-slate-500 dark:text-white/50 mb-8">Choose a preset amount or enter a custom one below.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <button type="button" data-amount="5000"
+              class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦5,000</button>
+            <button type="button" data-amount="10000"
+              class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦10,000</button>
+            <button type="button" data-amount="25000"
+              class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦25,000</button>
+            <button type="button" data-amount="50000"
+              class="amount-btn py-4 px-6 border-2 border-slate-200 dark:border-white/10 text-on-surface dark:text-white font-bold rounded-lg transition-all text-xl hover:border-secondary">₦50,000</button>
+          </div>
+          <div class="mb-8">
+            <label for="customAmount"
+              class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Custom Amount
+              (₦)</label>
+            <div class="relative">
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-lg text-slate-400">₦</span>
+              <input id="customAmount" name="amount" type="number" min="100"
+                class="w-full pl-10 pr-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-lg font-medium text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
+                placeholder="Enter amount" />
             </div>
-            <div>
-              <label for="lastName" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Last Name <span class="text-red-500">*</span></label>
-              <input id="lastName" type="text" autocomplete="family-name"
-                class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
-                placeholder="Doe" />
-              <p id="lastNameError" class="text-red-500 text-xs mt-1 hidden">Last name is required.</p>
-            </div>
+            <p id="amountError" class="text-red-500 text-xs mt-2 hidden">Please select or enter a donation amount.</p>
           </div>
-          <div>
-            <label for="email" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Email Address <span class="text-red-500">*</span></label>
-            <input id="email" type="email" autocomplete="email"
-              class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
-              placeholder="john@example.com" />
-            <p id="emailError" class="text-red-500 text-xs mt-1 hidden">A valid email is required.</p>
+          <div id="selectedAmountDisplay"
+            class="hidden mb-8 p-4 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center gap-3">
+            <span class="material-symbols-outlined text-secondary">check_circle</span>
+            <p class="text-sm font-semibold text-secondary">Selected: <span id="selectedAmountText"></span></p>
           </div>
-          <div>
-            <label for="phone" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Phone Number <span class="text-slate-300 normal-case tracking-normal font-normal">(optional)</span></label>
-            <input id="phone" type="tel" autocomplete="tel"
-              class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
-              placeholder="+234 800 000 0000" />
-          </div>
-          <div>
-            <label for="note" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Donation Message <span class="text-slate-300 normal-case tracking-normal font-normal">(optional)</span></label>
-            <textarea id="note" rows="3"
-              class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20 resize-none"
-              placeholder="Leave a message or dedication..."></textarea>
-          </div>
-        </div>
-        <div class="flex gap-4 mt-8">
-          <button type="button" onclick="goToStep(1)"
-            class="flex-1 py-4 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-slate-500 dark:text-white/50 hover:bg-slate-50 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined">arrow_back</span> Back
-          </button>
-          <button type="button" onclick="goToStep(3)"
-            class="flex-[2] bg-secondary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
-            Continue to Payment <span class="material-symbols-outlined">arrow_forward</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- STEP 3 -->
-      <div id="step-3" class="step-panel">
-        <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Payment Summary</h3>
-        <p class="text-sm text-slate-500 dark:text-white/50 mb-8">Review your donation details and complete your payment securely via Paystack.</p>
-        <div class="bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 rounded-xl p-6 mb-8">
-          <h4 class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-4">Donation Summary</h4>
-          <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
-            <span class="text-sm text-slate-500 dark:text-white/50">Donor Name</span>
-            <span id="summaryName" class="text-sm font-semibold text-primary dark:text-white">—</span>
-          </div>
-          <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
-            <span class="text-sm text-slate-500 dark:text-white/50">Email</span>
-            <span id="summaryEmail" class="text-sm font-semibold text-primary dark:text-white">—</span>
-          </div>
-          <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
-            <span class="text-sm text-slate-500 dark:text-white/50">Phone</span>
-            <span id="summaryPhone" class="text-sm font-semibold text-primary dark:text-white">—</span>
-          </div>
-          <div id="summaryNoteRow"
-            class="flex justify-between items-start py-3 border-b border-slate-100 dark:border-white/10 hidden">
-            <span class="text-sm text-slate-500 dark:text-white/50">Message</span>
-            <span id="summaryNote"
-              class="text-sm font-semibold text-primary dark:text-white max-w-[60%] text-right">—</span>
-          </div>
-          <div class="flex justify-between items-center pt-3">
-            <span class="text-base font-bold text-primary dark:text-white">Total Donation</span>
-            <span id="summaryAmount" class="text-2xl font-black text-secondary">—</span>
-          </div>
-        </div>
-        <div
-          class="flex items-center gap-4 mb-8 p-4 bg-slate-50 dark:bg-white/5 rounded-xl border border-slate-100 dark:border-white/10">
-          <div class="bg-[#09A5DB] p-2 rounded-lg flex-shrink-0">
-            <div class="w-14 h-6 flex items-center justify-center font-black text-white text-[10px] italic">PAYSTACK
-            </div>
-          </div>
-          <div>
-            <p class="text-sm font-semibold text-primary dark:text-white">Securely powered by Paystack</p>
-            <p class="text-xs text-slate-500 dark:text-white/40">Accepting Card, Bank Transfer, and USSD</p>
-          </div>
-          <div class="ml-auto flex items-center gap-1">
-            <span class="material-symbols-outlined text-green-500 text-[18px]">lock</span>
-            <span class="text-xs text-green-600 font-bold">SSL Secured</span>
-          </div>
-        </div>
-        <div class="flex gap-4">
           <button type="button" onclick="goToStep(2)"
-            class="flex-1 py-4 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-slate-500 dark:text-white/50 hover:bg-slate-50 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined">arrow_back</span> Back
-          </button>
-          <button type="button" id="payBtn" onclick="initiatePayment()"
-            class="flex-[2] bg-secondary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined">payment</span>
-            Complete Donation
+            class="w-full bg-secondary text-white py-5 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
+            Continue to Personal Info
+            <span class="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>
-        <p class="text-center text-[10px] text-slate-400 uppercase tracking-[0.2em] mt-6">Your payment is encrypted and secure. You will receive a receipt via email.</p>
-      </div>
 
-      <!-- STEP 4: Success -->
+        <!-- STEP 2: Personal Details -->
+        <div id="step-2" class="step-panel">
+          <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Personal Information</h3>
+          <p class="text-sm text-slate-500 dark:text-white/50 mb-8">We need a few details to process your donation and
+            send a receipt.</p>
+          <div class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName"
+                  class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">First Name <span
+                    class="text-red-500">*</span></label>
+                <input id="firstName" name="first_name" type="text" autocomplete="given-name"
+                  class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
+                  placeholder="John" />
+                <p id="firstNameError" class="text-red-500 text-xs mt-1 hidden">First name is required.</p>
+              </div>
+              <div>
+                <label for="lastName"
+                  class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Last Name <span
+                    class="text-red-500">*</span></label>
+                <input id="lastName" name="last_name" type="text" autocomplete="family-name"
+                  class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
+                  placeholder="Doe" />
+                <p id="lastNameError" class="text-red-500 text-xs mt-1 hidden">Last name is required.</p>
+              </div>
+            </div>
+            <div>
+              <label for="email" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Email
+                Address <span class="text-red-500">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email"
+                class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
+                placeholder="john@example.com" />
+              <p id="emailError" class="text-red-500 text-xs mt-1 hidden">A valid email is required.</p>
+            </div>
+            <div>
+              <label for="phone" class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Phone
+                Number <span class="text-slate-300 normal-case tracking-normal font-normal">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel"
+                class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20"
+                placeholder="+234 800 000 0000" />
+            </div>
+            <div>
+              <label for="note"
+                class="text-[10px] font-bold tracking-widest uppercase text-slate-400 block mb-2">Donation Message <span
+                  class="text-slate-300 normal-case tracking-normal font-normal">(optional)</span></label>
+              <textarea id="note" name="note" rows="3"
+                class="w-full px-4 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-secondary/30 focus:outline-none transition-all text-primary dark:text-white placeholder:text-slate-300 dark:placeholder:text-white/20 resize-none"
+                placeholder="Leave a message or dedication..."></textarea>
+            </div>
+          </div>
+          <div class="flex gap-4 mt-8">
+            <button type="button" onclick="goToStep(1)"
+              class="flex-1 py-4 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-slate-500 dark:text-white/50 hover:bg-slate-50 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">arrow_back</span> Back
+            </button>
+            <button type="button" onclick="goToStep(3)"
+              class="flex-[2] bg-secondary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
+              Continue to Payment <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Summary & Secure POST Submit -->
+        <div id="step-3" class="step-panel">
+          <h3 class="font-headline text-2xl font-bold mb-2 text-primary dark:text-white">Payment Summary</h3>
+          <p class="text-sm text-slate-500 dark:text-white/50 mb-8">Review your donation details and complete your
+            payment securely via Paystack.</p>
+          <div class="bg-white dark:bg-white/5 border border-slate-100 dark:border-white/10 rounded-xl p-6 mb-8">
+            <h4 class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-4">Donation Summary</h4>
+            <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
+              <span class="text-sm text-slate-500 dark:text-white/50">Donor Name</span>
+              <span id="summaryName" class="text-sm font-semibold text-primary dark:text-white">—</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
+              <span class="text-sm text-slate-500 dark:text-white/50">Email</span>
+              <span id="summaryEmail" class="text-sm font-semibold text-primary dark:text-white">—</span>
+            </div>
+            <div class="flex justify-between items-center py-3 border-b border-slate-100 dark:border-white/10">
+              <span class="text-sm text-slate-500 dark:text-white/50">Phone</span>
+              <span id="summaryPhone" class="text-sm font-semibold text-primary dark:text-white">—</span>
+            </div>
+            <div id="summaryNoteRow"
+              class="flex justify-between items-start py-3 border-b border-slate-100 dark:border-white/10 hidden">
+              <span class="text-sm text-slate-500 dark:text-white/50">Message</span>
+              <span id="summaryNote"
+                class="text-sm font-semibold text-primary dark:text-white max-w-[60%] text-right">—</span>
+            </div>
+            <div class="flex justify-between items-center pt-3">
+              <span class="text-base font-bold text-primary dark:text-white">Total Donation</span>
+              <span id="summaryAmount" class="text-2xl font-black text-secondary">—</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 mb-8 p-4 bg-slate-50 dark:bg-white/5 rounded-xl border border-slate-100 dark:border-white/10">
+            <div class="bg-[#09A5DB] p-2 rounded-lg flex-shrink-0">
+              <div class="w-14 h-6 flex items-center justify-center font-black text-white text-[10px] italic">PAYSTACK
+              </div>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-primary dark:text-white">Securely powered by Paystack</p>
+              <p class="text-xs text-slate-500 dark:text-white/40">Accepting Card, Bank Transfer, and USSD</p>
+            </div>
+            <div class="ml-auto flex items-center gap-1">
+              <span class="material-symbols-outlined text-green-500 text-[18px]">lock</span>
+              <span class="text-xs text-green-600 font-bold">SSL Secured</span>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <button type="button" onclick="goToStep(2)"
+              class="flex-1 py-4 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-slate-500 dark:text-white/50 hover:bg-slate-50 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">arrow_back</span> Back
+            </button>
+            <button type="button" id="payBtn" onclick="initiatePayment()"
+              class="flex-[2] bg-secondary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-secondary/20 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">payment</span> Complete Donation
+            </button>
+          </div>
+          <p class="text-center text-[10px] text-slate-400 uppercase tracking-[0.2em] mt-6">Your payment is encrypted
+            and secure. You will receive a receipt via email.</p>
+        </div>
+
+      </form>
+
+      <!-- STEP 4: Success / Redirection Landing -->
       <div id="step-4" class="step-panel">
         <div class="flex flex-col items-center text-center py-8">
           <div class="w-20 h-20 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-6">
@@ -211,10 +230,12 @@
             Your donation of <span id="successAmount" class="font-bold text-secondary"></span> has been received.
           </p>
           <p class="text-slate-500 dark:text-white/50 max-w-md leading-relaxed mb-8">
-            A receipt has been sent to <span id="successEmail" class="font-bold text-primary dark:text-white"></span>. Your generosity is making a real difference.
+            A receipt has been sent to <span id="successEmail" class="font-bold text-primary dark:text-white"></span>.
+            Your generosity is making a real difference.
           </p>
-          <a href="/"
-            class="bg-secondary text-white px-10 py-4 rounded-full font-bold hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-secondary/20">Back to Home</a>
+          <a href="{{ url_for('main.index') }}"
+            class="bg-secondary text-white px-10 py-4 rounded-full font-bold hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-secondary/20">Back
+            to Home</a>
         </div>
       </div>
 
@@ -270,40 +291,49 @@
           </div>
         </div>
       </div>
-      <p class="mt-8 text-sm leading-relaxed opacity-70">For every ₦1 donated, 90 kobo goes directly to frontline programs fighting laxity.</p>
+      <p class="mt-8 text-sm leading-relaxed opacity-70">For every ₦1 donated, 90 kobo goes directly to frontline
+        programs fighting laxity.</p>
     </section>
 
-    <!-- Recent Donors -->
+    <!-- Recent Donors (Driven natively by Flask context) -->
     <section class="bg-surface-container dark:bg-white/5 rounded-xl p-8 border border-slate-100 dark:border-white/10">
       <h4
-        class="font-label text-xs font-black uppercase tracking-widest text-on-surface-variant dark:text-white/40 mb-6">Recent Donors</h4>
+        class="font-label text-xs font-black uppercase tracking-widest text-on-surface-variant dark:text-white/40 mb-6">
+        Recent Donors</h4>
       <div id="recentDonors" class="space-y-4">
-        <!-- Skeleton loaders -->
-        <div class="flex items-center gap-3 donor-skeleton">
-          <div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-white/10"></div>
-          <div class="h-3 bg-slate-200 dark:bg-white/10 rounded w-32"></div>
+        {% if recent_donors %}
+        {% for donor in recent_donors %}
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-8 h-8 rounded-full bg-secondary/20 text-secondary flex items-center justify-center text-xs font-bold flex-shrink-0">
+              {{ donor.initials }}
+            </div>
+            <span class="text-sm font-semibold text-primary dark:text-white truncate">{{ donor.name }}</span>
+          </div>
+          <span class="text-xs font-black text-secondary flex-shrink-0">₦{{ "{:,}".format(donor.amount) }}</span>
         </div>
-        <div class="flex items-center gap-3 donor-skeleton" style="animation-delay:0.2s">
-          <div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-white/10"></div>
-          <div class="h-3 bg-slate-200 dark:bg-white/10 rounded w-24"></div>
-        </div>
-        <div class="flex items-center gap-3 donor-skeleton" style="animation-delay:0.4s">
-          <div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-white/10"></div>
-          <div class="h-3 bg-slate-200 dark:bg-white/10 rounded w-28"></div>
-        </div>
+        {% endfor %}
+        {% else %}
+        <p class="text-xs text-slate-400 dark:text-white/30 italic">No donors yet. Be the first!</p>
+        {% endif %}
       </div>
     </section>
 
     <div class="relative overflow-hidden rounded-xl bg-secondary-container/20 p-8">
       <div class="relative z-10">
         <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">format_quote</span>
-        <p class="font-headline italic text-lg text-on-secondary-container dark:text-white leading-relaxed mb-4">"KALF transformed our local library into a hub of innovation. The support was precise, disciplined, and life-changing."</p>
-        <cite class="not-italic text-sm font-bold text-on-secondary-container dark:text-white/60">— Maria G., Program Beneficiary</cite>
+        <p class="font-headline italic text-lg text-on-secondary-container dark:text-white leading-relaxed mb-4">"KALF
+          transformed our local library into a hub of innovation. The support was precise, disciplined, and
+          life-changing."</p>
+        <cite class="not-italic text-sm font-bold text-on-secondary-container dark:text-white/60">— Maria G., Program
+          Beneficiary</cite>
       </div>
     </div>
   </aside>
 </div>
-<!-- Theme & Nav -->
+
+<!-- Theme & Nav Scripts -->
 <script>
   const themeToggleBtn = document.getElementById("theme-toggle");
   const darkIcon = document.getElementById("theme-toggle-dark-icon");
@@ -336,21 +366,18 @@
   });
 </script>
 
-<!-- Form Logic -->
+<!-- Form Handling Script (Completely Clean Frontend) -->
 <script>
-  const BASE_URL = "https://kalf-backend.onrender.com/api/V1";
-  const PAYSTACK_PUBLIC_KEY = "pk_test_4abd6b438f2937c196b280d1fd15e8b54d6ce319";
-
   let selectedAmount = 0;
   let currentStep = 1;
 
-  // ── Amount Buttons ─────────────────────────────────────────
+  // ── Amount Selection ──
   document.querySelectorAll(".amount-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".amount-btn").forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
       selectedAmount = parseInt(btn.dataset.amount);
-      document.getElementById("customAmount").value = "";
+      document.getElementById("customAmount").value = selectedAmount; // Update input field
       updateAmountDisplay();
     });
   });
@@ -358,8 +385,13 @@
   document.getElementById("customAmount").addEventListener("input", (e) => {
     const val = parseInt(e.target.value);
     document.querySelectorAll(".amount-btn").forEach((b) => b.classList.remove("selected"));
-    if (val && val > 0) { selectedAmount = val; updateAmountDisplay(); }
-    else { selectedAmount = 0; document.getElementById("selectedAmountDisplay").classList.add("hidden"); }
+    if (val && val > 0) {
+      selectedAmount = val;
+      updateAmountDisplay();
+    } else {
+      selectedAmount = 0;
+      document.getElementById("selectedAmountDisplay").classList.add("hidden");
+    }
   });
 
   function updateAmountDisplay() {
@@ -369,55 +401,11 @@
     }
   }
 
-  function formatAmount(amount) { return "₦" + parseInt(amount).toLocaleString(); }
-
-  // ── Fetch Recent Donors ─────────────────────────────────────
-  async function loadRecentDonors() {
-    try {
-      const res = await fetch(`${BASE_URL}/web/all/donations`);
-      if (!res.ok) throw new Error("Failed to fetch donors");
-      const data = await res.json();
-
-      // Handle different possible response shapes
-      const donors = data.result || data.donations || data.data || (Array.isArray(data) ? data : []);
-      const container = document.getElementById("recentDonors");
-
-      if (!donors || !donors.length) {
-        container.innerHTML = '<p class="text-xs text-slate-400 dark:text-white/30 italic">No donors yet. Be the first!</p>';
-        return;
-      }
-
-      // Show latest 5 only, most recent first
-      const recent = [...donors].reverse().slice(0, 5);
-
-      container.innerHTML = recent.map(donor => {
-        const nameParts = (donor.name || "Anonymous").trim().split(" ");
-        const initials = nameParts.map(n => n[0]).join("").toUpperCase().slice(0, 2);
-        const displayName = donor.name || "Anonymous";
-        const amount = parseFloat(donor.amount) || 0;
-
-        return `
-                <div class="flex items-center justify-between gap-3">
-                  <div class="flex items-center gap-3 min-w-0">
-                    <div class="w-8 h-8 rounded-full bg-secondary/20 text-secondary flex items-center justify-center text-xs font-bold flex-shrink-0">${initials}</div>
-                    <span class="text-sm font-semibold text-primary dark:text-white truncate">${displayName}</span>
-                  </div>
-                  <span class="text-xs font-black text-secondary flex-shrink-0">${formatAmount(amount)}</span>
-                </div>
-              `;
-      }).join("");
-
-    } catch (err) {
-      console.error("Failed to load donors:", err);
-      document.getElementById("recentDonors").innerHTML =
-        '<p class="text-xs text-slate-400 dark:text-white/30 italic">Could not load donors.</p>';
-    }
+  function formatAmount(amount) {
+    return "₦" + parseInt(amount).toLocaleString();
   }
 
-  // Load donors on page load
-  loadRecentDonors();
-
-  // ── Stepper ─────────────────────────────────────────────────
+  // ── Stepper ──
   function updateStepper(step) {
     for (let i = 1; i <= 3; i++) {
       const circle = document.getElementById(`step-circle-${i}`);
@@ -440,10 +428,13 @@
     document.getElementById("connector-2").className = `flex-1 h-[2px] mx-4 mt-[-20px] step-connector transition-all duration-300 ${step > 2 ? "bg-green-500" : "bg-slate-200 dark:bg-white/10"}`;
   }
 
-  // ── Navigation ──────────────────────────────────────────────
+  // ── Navigation & Validation ──
   function goToStep(step) {
     if (step === 2) {
-      if (!selectedAmount || selectedAmount <= 0) { document.getElementById("amountError").classList.remove("hidden"); return; }
+      if (!selectedAmount || selectedAmount <= 0) {
+        document.getElementById("amountError").classList.remove("hidden");
+        return;
+      }
       document.getElementById("amountError").classList.add("hidden");
     }
     if (step === 3) {
@@ -451,18 +442,44 @@
       const firstName = document.getElementById("firstName").value.trim();
       const lastName = document.getElementById("lastName").value.trim();
       const email = document.getElementById("email").value.trim();
-      if (!firstName) { document.getElementById("firstNameError").classList.remove("hidden"); valid = false; } else { document.getElementById("firstNameError").classList.add("hidden"); }
-      if (!lastName) { document.getElementById("lastNameError").classList.remove("hidden"); valid = false; } else { document.getElementById("lastNameError").classList.add("hidden"); }
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { document.getElementById("emailError").classList.remove("hidden"); valid = false; } else { document.getElementById("emailError").classList.add("hidden"); }
+
+      if (!firstName) {
+        document.getElementById("firstNameError").classList.remove("hidden");
+        valid = false;
+      } else {
+        document.getElementById("firstNameError").classList.add("hidden");
+      }
+
+      if (!lastName) {
+        document.getElementById("lastNameError").classList.remove("hidden");
+        valid = false;
+      } else {
+        document.getElementById("lastNameError").classList.add("hidden");
+      }
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("emailError").classList.remove("hidden");
+        valid = false;
+      } else {
+        document.getElementById("emailError").classList.add("hidden");
+      }
+
       if (!valid) return;
+
       const phone = document.getElementById("phone").value.trim();
       const note = document.getElementById("note").value.trim();
+
       document.getElementById("summaryName").textContent = `${firstName} ${lastName}`;
       document.getElementById("summaryEmail").textContent = email;
       document.getElementById("summaryPhone").textContent = phone || "—";
       document.getElementById("summaryAmount").textContent = formatAmount(selectedAmount);
-      if (note) { document.getElementById("summaryNote").textContent = note; document.getElementById("summaryNoteRow").classList.remove("hidden"); }
-      else { document.getElementById("summaryNoteRow").classList.add("hidden"); }
+
+      if (note) {
+        document.getElementById("summaryNote").textContent = note;
+        document.getElementById("summaryNoteRow").classList.remove("hidden");
+      } else {
+        document.getElementById("summaryNoteRow").classList.add("hidden");
+      }
     }
     document.querySelectorAll(".step-panel").forEach((p) => p.classList.remove("active"));
     document.getElementById(`step-${step}`).classList.add("active");
@@ -471,58 +488,22 @@
     document.getElementById("formCard").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  // ── Paystack Payment ────────────────────────────────────────
+  // ── Submit Form to Flask ──
   function initiatePayment() {
     const btn = document.getElementById("payBtn");
-    const firstName = document.getElementById("firstName").value.trim();
-    const lastName = document.getElementById("lastName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("note").value.trim();
-    const name = `${firstName} ${lastName}`;
-
     btn.disabled = true;
-    btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> Please wait...';
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> Redirecting to payment...';
 
-    const slowTimer = setTimeout(() => {
-      btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> Server waking up, please wait...';
-    }, 8000);
+    // Store properties locally to populate the success step if returning
+    const email = document.getElementById("email").value.trim();
+    localStorage.setItem("donorEmail", email);
+    localStorage.setItem("donorAmount", selectedAmount);
 
-    fetch(`${BASE_URL}/web/create/donation`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        amount: selectedAmount,
-        message: message || "Donation to KALF Foundation"
-      })
-    })
-      .then(res => {
-        if (!res.ok) throw new Error(`Server error: ${res.status}`);
-        return res.json();
-      })
-      .then(data => {
-        clearTimeout(slowTimer);
-        console.log("Donation init:", data);
-        const authUrl = data?.result?.authorization_url;
-        if (data.success && authUrl) {
-          localStorage.setItem("donorEmail", email);
-          localStorage.setItem("donorAmount", selectedAmount);
-          window.location.href = authUrl;
-        } else {
-          throw new Error(data.message || "No authorization URL returned");
-        }
-      })
-      .catch(err => {
-        clearTimeout(slowTimer);
-        console.error("Payment error:", err);
-        btn.disabled = false;
-        btn.innerHTML = '<span class="material-symbols-outlined">payment</span> Complete Donation';
-        alert("Payment error: " + err.message + "\n\nIf this persists, the server may be starting up — please try again in 30 seconds.");
-      });
+    // Formally submit form fields to Flask route
+    document.getElementById("donationForm").submit();
   }
 
-  // ── Check payment status on page load (after Paystack redirect back) ─
+  // ── Success page fallback landing ──
   window.addEventListener("load", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const trxref = urlParams.get("trxref") || urlParams.get("reference");
@@ -534,11 +515,10 @@
       document.querySelectorAll(".step-panel").forEach((p) => p.classList.remove("active"));
       document.getElementById("step-4").classList.add("active");
       document.getElementById("stepperContainer").classList.add("hidden");
-      window.history.replaceState({}, document.title, "/donate");
-      // Refresh donors list after successful donation
-      loadRecentDonors();
+
+      // Dynamically generated route from Flask context:
+      window.history.replaceState({}, document.title, '{{ url_for("main.donate") }}');
     }
   });
 </script>
-
 {% endblock %}
